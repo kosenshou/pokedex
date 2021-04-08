@@ -13,7 +13,9 @@ const Nav = () => {
           alt = 'Loading' 
           align="left"
         />
-        </th><th><h4>Pokedex</h4></th></tr></tbody></table>
+        </th><th>
+          <h4>Pokedex</h4>
+        </th></tr></tbody></table>
       </div>
 
       <ul className="nav-links">

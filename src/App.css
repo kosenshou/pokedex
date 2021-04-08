@@ -18,6 +18,22 @@
   list-style: none;
 }
 
+.preface_card {
+  width: 400px;
+  background-color:rgb(157, 193, 224);
+  padding: 20px;
+  margin: 30px;
+  font-family: 'Orbitron';
+  border-radius: 15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #2b3f41;
+}
+
+.preface_card li {
+  list-style: none;
+}
+
 .cards {
   display: flex;
   /* grid-template-columns: repeat(4, 1fr); */

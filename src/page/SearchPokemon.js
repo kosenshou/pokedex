@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import PokemonCard from '../components/pokemons/PokemonCard';
+import Preface from '../components/ui/Preface';
 import plusle from '../img/plusle.gif'
 
 const SearchPokemon = () => {
@@ -36,8 +37,11 @@ const SearchPokemon = () => {
       );
     } else {
       return (
-        <div className="center" style={{marginTop: '350px'}}>
-        <img style={{width: '400px'}} src={plusle} alt='' />
+        <div>
+          <Preface />
+          <div className="center">
+          <img style={{width: '400px', marginTop: '60px'}} src={plusle} alt='' />
+          </div>
         </div>
       );
     }

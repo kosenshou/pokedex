@@ -1,38 +1,111 @@
-.App {
+.search_button {
+  margin-left: 10px;
+}
+
+.card {
+  width: 250px;
+  background-color:rgb(167, 179, 190);
+  padding: 20px;
+  margin: 30px;
+  font-family: 'Orbitron';
+  border-radius: 15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(80, 121, 124);
+}
+
+.card li {
+  list-style: none;
+}
+
+.cards {
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-image: url(img/bg-sky.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #d44931;
+  font-family: 'Press Start 2P';
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  color: rgb(255, 255, 184);
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+  text-align: center;
+  /* place-items: center; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: rgb(80, 121, 124);
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  /* border: 2px solid #6cc473; */
+  font-family: 'Press Start 2P';
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  transform: translateY(-3px);
 }
 
-.App-link {
-  color: #61dafb;
+.search_pokemon {
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 30%;
+  margin: auto;
+  outline: none;
+  font-family: 'Orbitron';
 }
